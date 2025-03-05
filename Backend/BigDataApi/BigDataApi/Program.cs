@@ -1,4 +1,7 @@
 
+using BigDataApi.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace BigDataApi
 {
     public class Program
@@ -13,6 +16,11 @@ namespace BigDataApi
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddDbContext<AppDBContext>(option =>
+            {
+                option.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionString"));
+            });
 
             var app = builder.Build();
 
