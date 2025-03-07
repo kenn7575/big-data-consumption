@@ -6,5 +6,5 @@ public partial class Artist
 
     public string Name { get; set; } = null!;
 
-    public virtual ICollection<Record> Records { get; set; } = new List<Record>();
+    public virtual ICollection<Song> Spotifies { get; set; } = new List<Song>();
 }
