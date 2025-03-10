@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "viBmsPy61mA=",
+  "dgSpecHash": "jw+WLwc29hU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj",
+  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\big-data-consumption\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HFGF\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
