@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HFGF\\source\\repos\\big-data-consumption\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj": {}
+    "C:\\Users\\HFGF\\source\\repos\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HFGF\\source\\repos\\big-data-consumption\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj": {
+    "C:\\Users\\HFGF\\source\\repos\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\big-data-consumption\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj",
+        "projectUniqueName": "C:\\Users\\HFGF\\source\\repos\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj",
         "projectName": "BigDataApi",
-        "projectPath": "C:\\Users\\HFGF\\source\\repos\\big-data-consumption\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj",
+        "projectPath": "C:\\Users\\HFGF\\source\\repos\\Backend\\BigDataApi\\BigDataApi\\BigDataApi.csproj",
         "packagesPath": "C:\\Users\\HFGF\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HFGF\\source\\repos\\big-data-consumption\\Backend\\BigDataApi\\BigDataApi\\obj\\",
+        "outputPath": "C:\\Users\\HFGF\\source\\repos\\Backend\\BigDataApi\\BigDataApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,15 +45,25 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -79,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

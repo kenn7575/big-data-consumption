@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BigDataApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+afe9cbeec87d5159dfa3f9aa8b8c2cdca3266c89")]
 [assembly: System.Reflection.AssemblyProductAttribute("BigDataApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BigDataApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
