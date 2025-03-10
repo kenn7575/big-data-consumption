@@ -1,4 +1,6 @@
 using BigDataApi.Data;
+using BigDataApi.Interfaces;
+using BigDataApi.Managers;
 using Microsoft.EntityFrameworkCore;
 
 namespace BigDataApi
@@ -20,6 +22,8 @@ namespace BigDataApi
             {
                 option.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionString"));
             });
+
+            builder.Services.AddScoped<IRecordManager, RecordsManager>();
 
             var app = builder.Build();
 

@@ -1,5 +1,6 @@
 using System.Globalization;
 using BigDataApi.Data;
+using BigDataApi.Interfaces;
 using BigDataApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,10 +12,12 @@ namespace BigDataApi.Controllers
     public class RecordsController : ControllerBase
     {
         private readonly AppDBContext appDBContext;
+        private readonly IRecordManager recordsManager;
 
-        public RecordsController(AppDBContext appDBContext)
+        public RecordsController(AppDBContext appDBContext, IRecordManager recordsManager)
         {
             this.appDBContext = appDBContext;
+            this.recordsManager = recordsManager;
         }
 
 
@@ -129,7 +132,7 @@ namespace BigDataApi.Controllers
                 //    song.Artists.Add(artists);
                 //}
 
-                
+
 
                 //if (album == null)
                 //{
@@ -168,15 +171,22 @@ namespace BigDataApi.Controllers
         [HttpGet("GetAllRecords")]
         public async Task<IActionResult> GetRecoreds()
         {
-            var data = await appDBContext.Records.Take(1000).Include(x => x.Spotify).ToListAsync();
-
-            return Ok(data);
+            var jsonData = await recordsManager.GetAllRecords();
+            return Ok(jsonData);
         }
 
+        [HttpGet("GetRecordBasedOnCountry/{countryCode}")]
+        public async Task<IActionResult> GetRecordBasedOnCountry(string countryCode)
+        {
+            var jsonData = await recordsManager.GetRecordBasedOnCountry(countryCode);
+            return Ok(jsonData);
+        }
 
-
-
-
-
+        [HttpGet("GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups/{countryCode}")]
+        public async Task<IActionResult> GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(string countryCode)
+        {
+            var result = await recordsManager.GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(countryCode);
+            return Ok(result);
+        }
     }
 }
