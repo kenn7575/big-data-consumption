@@ -53,7 +53,7 @@ namespace BigDataApi.Managers
                     {
                         Name = record.Spotify.Name,
                         Date = record.SnapshotDate.Value,
-                        Points = record.DailyRank.HasValue ? record.DailyRank.Value : -51
+                        Points = 51 - record.DailyRank.Value
                     })
                     .ToList();
 
