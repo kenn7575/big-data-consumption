@@ -182,11 +182,18 @@ namespace BigDataApi.Controllers
             return Ok(jsonData);
         }
 
-        [HttpGet("GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups/{countryCode}")]
-        public async Task<IActionResult> GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(string countryCode)
+        [HttpGet("GetRecordBasedOnCountryAndDateAndCalculateSongsPoints/{countryCode}")]
+        public async Task<IActionResult> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode)
         {
-            var result = await recordsManager.GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(countryCode);
+            var result = await recordsManager.GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(countryCode);
             return Ok(result);
+        }
+
+        [HttpGet("GetAllCountryCodes")]
+        public async Task<IActionResult> GetAllCountryCodes()
+        {
+            var countryCodes = await recordsManager.GetAllCountryCodes();
+            return Ok(countryCodes);
         }
     }
 }

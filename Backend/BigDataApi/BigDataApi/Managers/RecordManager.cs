@@ -16,7 +16,7 @@ namespace BigDataApi.Managers
             this.appDBContext = appDBContext;
         }
 
-        public async Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(string countryCode)
+        public async Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode)
         {
             countryCode = countryCode.ToUpper();
             List<RecordDto> result = new List<RecordDto>();
@@ -48,17 +48,16 @@ namespace BigDataApi.Managers
                     break;
                 }
 
-                var groupedData = data
-                    .GroupBy(record => record.Spotify.Name)
-                    .Select(group => new RecordDto
+                var dailyData = data
+                    .Select(record => new RecordDto
                     {
-                        Name = group.Key,
-                        Date = startDate,
-                        Points = group.Sum(record => record.DailyRank.HasValue ? record.DailyRank.Value : -51)
+                        Name = record.Spotify.Name,
+                        Date = record.SnapshotDate.Value,
+                        Points = record.DailyRank.HasValue ? record.DailyRank.Value : -51
                     })
                     .ToList();
 
-                result.AddRange(groupedData);
+                result.AddRange(dailyData);
 
                 startDate = endDate;
             }
@@ -99,6 +98,20 @@ namespace BigDataApi.Managers
             var jsonData = JsonSerializer.Serialize(data, options);
 
             return jsonData;
+        }
+
+        public async Task<List<string>> GetAllCountryCodes()
+        {
+            var countryCodes = await appDBContext.Records
+                .Select(x => x.Country)
+                .Distinct()
+                .ToListAsync();
+
+            var filteredCountryCodes = countryCodes
+                .Where(code => code.Length == 2 && code.All(char.IsUpper))
+                .ToList();
+
+            return filteredCountryCodes;
         }
     }
 }

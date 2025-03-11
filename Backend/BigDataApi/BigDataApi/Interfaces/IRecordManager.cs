@@ -4,8 +4,9 @@ namespace BigDataApi.Interfaces
 {
     public interface IRecordManager
     {
-        Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(string countryCode);
+        Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode);
         Task<string> GetAllRecords();
         Task<string> GetRecordBasedOnCountry(string countryCode);
+        Task<List<string>> GetAllCountryCodes();
     }
 }
