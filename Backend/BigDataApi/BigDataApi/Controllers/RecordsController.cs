@@ -183,9 +183,9 @@ namespace BigDataApi.Controllers
         }
 
         [HttpGet("GetRecordBasedOnCountryAndDateAndCalculateSongsPoints/{countryCode}")]
-        public async Task<IActionResult> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode)
+        public async Task<IActionResult> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode, [FromQuery] DateOnly startDate, [FromQuery] DateOnly endDate)
         {
-            var result = await recordsManager.GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(countryCode);
+            var result = await recordsManager.GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(countryCode, startDate, endDate);
             return Ok(result);
         }
 

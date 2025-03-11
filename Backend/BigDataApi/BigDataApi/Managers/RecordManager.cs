@@ -16,51 +16,31 @@ namespace BigDataApi.Managers
             this.appDBContext = appDBContext;
         }
 
-        public async Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode)
+        public async Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode, DateOnly startDate, DateOnly endDate)
         {
             countryCode = countryCode.ToUpper();
             List<RecordDto> result = new List<RecordDto>();
 
-            var oldestDate = await appDBContext.Records
-                .Where(x => x.Country == countryCode)
-                .OrderBy(x => x.SnapshotDate)
-                .Select(x => x.SnapshotDate)
-                .FirstOrDefaultAsync();
+            var data = await appDBContext.Records
+                .Where(x => x.Country == countryCode && x.SnapshotDate >= startDate && x.SnapshotDate <= endDate)
+                .Include(x => x.Spotify)
+                .ToListAsync();
 
-            if (oldestDate == null)
+            if (!data.Any())
             {
                 return result;
             }
 
-            DateOnly startDate = oldestDate.Value;
-
-            while (true)
-            {
-                DateOnly endDate = startDate.AddDays(7);
-
-                var data = await appDBContext.Records
-                    .Where(x => x.Country == countryCode && x.SnapshotDate >= startDate && x.SnapshotDate < endDate)
-                    .Include(x => x.Spotify)
-                    .ToListAsync();
-
-                if (!data.Any())
+            var dailyData = data
+                .Select(record => new RecordDto
                 {
-                    break;
-                }
+                    Name = record.Spotify.Name,
+                    Date = record.SnapshotDate.Value,
+                    Points = record.DailyRank.HasValue ? record.DailyRank.Value : -51
+                })
+                .ToList();
 
-                var dailyData = data
-                    .Select(record => new RecordDto
-                    {
-                        Name = record.Spotify.Name,
-                        Date = record.SnapshotDate.Value,
-                        Points = 51 - record.DailyRank.Value
-                    })
-                    .ToList();
-
-                result.AddRange(dailyData);
-
-                startDate = endDate;
-            }
+            result.AddRange(dailyData);
 
             return result;
         }
