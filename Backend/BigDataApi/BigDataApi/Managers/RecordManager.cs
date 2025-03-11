@@ -16,52 +16,31 @@ namespace BigDataApi.Managers
             this.appDBContext = appDBContext;
         }
 
-        public async Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPointsInSevenDaysGroups(string countryCode)
+        public async Task<List<RecordDto>> GetRecordBasedOnCountryAndDateAndCalculateSongsPoints(string countryCode, DateOnly startDate, DateOnly endDate)
         {
             countryCode = countryCode.ToUpper();
             List<RecordDto> result = new List<RecordDto>();
 
-            var oldestDate = await appDBContext.Records
-                .Where(x => x.Country == countryCode)
-                .OrderBy(x => x.SnapshotDate)
-                .Select(x => x.SnapshotDate)
-                .FirstOrDefaultAsync();
+            var data = await appDBContext.Records
+                .Where(x => x.Country == countryCode && x.SnapshotDate >= startDate && x.SnapshotDate <= endDate)
+                .Include(x => x.Spotify)
+                .ToListAsync();
 
-            if (oldestDate == null)
+            if (!data.Any())
             {
                 return result;
             }
 
-            DateOnly startDate = oldestDate.Value;
-
-            while (true)
-            {
-                DateOnly endDate = startDate.AddDays(7);
-
-                var data = await appDBContext.Records
-                    .Where(x => x.Country == countryCode && x.SnapshotDate >= startDate && x.SnapshotDate < endDate)
-                    .Include(x => x.Spotify)
-                    .ToListAsync();
-
-                if (!data.Any())
+            var dailyData = data
+                .Select(record => new RecordDto
                 {
-                    break;
-                }
+                    Name = record.Spotify.Name,
+                    Date = record.SnapshotDate.Value,
+                    Points = record.DailyRank.HasValue ? record.DailyRank.Value : -51
+                })
+                .ToList();
 
-                var groupedData = data
-                    .GroupBy(record => record.Spotify.Name)
-                    .Select(group => new RecordDto
-                    {
-                        Name = group.Key,
-                        Date = startDate,
-                        Points = group.Sum(record => record.DailyRank.HasValue ? record.DailyRank.Value : -51)
-                    })
-                    .ToList();
-
-                result.AddRange(groupedData);
-
-                startDate = endDate;
-            }
+            result.AddRange(dailyData);
 
             return result;
         }
@@ -99,6 +78,20 @@ namespace BigDataApi.Managers
             var jsonData = JsonSerializer.Serialize(data, options);
 
             return jsonData;
+        }
+
+        public async Task<List<string>> GetAllCountryCodes()
+        {
+            var countryCodes = await appDBContext.Records
+                .Select(x => x.Country)
+                .Distinct()
+                .ToListAsync();
+
+            var filteredCountryCodes = countryCodes
+                .Where(code => code.Length == 2 && code.All(char.IsUpper))
+                .ToList();
+
+            return filteredCountryCodes;
         }
     }
 }
