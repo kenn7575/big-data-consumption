@@ -83,6 +83,7 @@ namespace BigDataApi.Managers
         public async Task<List<string>> GetAllCountryCodes()
         {
             var countryCodes = await appDBContext.Records
+                .Where(x => x.Country != null)
                 .Select(x => x.Country)
                 .Distinct()
                 .ToListAsync();
