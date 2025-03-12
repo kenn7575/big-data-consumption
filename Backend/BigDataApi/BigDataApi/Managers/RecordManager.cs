@@ -94,13 +94,12 @@ namespace BigDataApi.Managers
             return filteredCountryCodes;
         }
 
-
         public async Task<List<ArtistPopularityDto>> GetArtistPopularityByDate(int artistId, DateOnly date)
         {
             List<ArtistPopularityDto> result = new List<ArtistPopularityDto>();
 
             var data = await appDBContext.Records
-                .Where(x => x.SnapshotDate == date && x.Spotify.Artists.Any(a => a.ArtistId == artistId))
+                .Where(x => x.SnapshotDate == date && x.DailyRank <= 50 && x.Spotify.Artists.Any(a => a.ArtistId == artistId))
                 .Include(x => x.Spotify)
                 .ThenInclude(s => s.Artists)
                 .ToListAsync();
@@ -115,7 +114,7 @@ namespace BigDataApi.Managers
                 .Select(group => new ArtistPopularityDto
                 {
                     Country = group.Key,
-                    Popularity = group.Sum(record => 51 - (record.DailyRank.HasValue ? record.DailyRank.Value : 51))
+                    Popularity = group.Count()
                 })
                 .ToList();
 
