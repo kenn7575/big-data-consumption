@@ -20,6 +20,9 @@ def main(df):
   
   standardDf = standardDf.drop(columns=['artists'])
   print("Drop columns: ", timer.checkpoint())
+  
+  standardDf.fillna({ "artist": "[Unnamed artist]" }, inplace=True)
+  print("Fill NaN values: ", timer.checkpoint())
 
   song_artistsDf = standardDf.copy()
   
