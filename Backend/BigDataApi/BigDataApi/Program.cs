@@ -35,6 +35,7 @@ namespace BigDataApi
             });
 
             builder.Services.AddScoped<IRecordManager, RecordsManager>();
+            builder.Services.AddScoped<ISongManager, SongManager>();
 
 
 

@@ -77,7 +77,7 @@ namespace BigDataApi.Data
                 entity.ToTable("songs");
 
                 entity.Property(e => e.SpotifyId).HasColumnName("spotify_id");
-                entity.Property(e => e.Accusticness).HasColumnName("accusticness");
+                entity.Property(e => e.Acousticness).HasColumnName("acousticness");
                 entity.Property(e => e.AlbumId).HasColumnName("album_id");
                 entity.Property(e => e.Danceability).HasColumnName("danceability");
                 entity.Property(e => e.DurationMs).HasColumnName("duration_ms");

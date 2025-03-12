@@ -22,7 +22,7 @@ public partial class Song
 
     public double? Speechiness { get; set; }
 
-    public double? Accusticness { get; set; }
+    public double? Acousticness { get; set; }
 
     public double? Instrumentalness { get; set; }
 
