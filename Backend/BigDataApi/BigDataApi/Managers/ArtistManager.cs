@@ -23,11 +23,11 @@ namespace BigDataApi.Managers
                 })
                 .ToList();
         }
-        public IEnumerable<ArtistDto> GetArtistsByInitial(char initial)
+
+        public IEnumerable<ArtistDto> SearchArtistsByName(string name)
         {
             return _context.Artists
-                .AsEnumerable()
-                .Where(a => a.Name.StartsWith(initial.ToString(), StringComparison.OrdinalIgnoreCase))
+                .Where(a => a.Name.StartsWith(name))
                 .Select(a => new ArtistDto
                 {
                     ArtistId = a.ArtistId,

@@ -22,10 +22,10 @@ namespace BigDataApi.Controllers
             return Ok(artists);
         }
 
-        [HttpGet("searchByInitial")]
-        public ActionResult<IEnumerable<ArtistDto>> GetArtistsByInitial(char initial)
+        [HttpGet("SearchArtistsByName")]
+        public ActionResult<IEnumerable<ArtistDto>> SearchArtistsByName(string name)
         {
-            var artists = _artistManager.GetArtistsByInitial(initial);
+            var artists = _artistManager.SearchArtistsByName(name);
             if (artists == null || !artists.Any())
             {
                 return NotFound();
