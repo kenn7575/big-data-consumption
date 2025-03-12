@@ -1,4 +1,5 @@
-﻿namespace BigDataApi.Models;
+﻿using System.Text.Json.Serialization;
+namespace BigDataApi.Models;
 
 public partial class Record
 {
@@ -18,5 +19,6 @@ public partial class Record
 
     public int? Popularity { get; set; }
 
+    [JsonIgnore]
     public virtual Song Spotify { get; set; } = null!;
 }

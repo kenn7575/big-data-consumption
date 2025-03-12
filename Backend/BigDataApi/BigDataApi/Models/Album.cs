@@ -1,4 +1,5 @@
-﻿namespace BigDataApi.Models;
+﻿using System.Text.Json.Serialization;
+namespace BigDataApi.Models;
 
 public partial class Album
 {
@@ -8,5 +9,6 @@ public partial class Album
 
     public string? AlbumName { get; set; }
 
+    [JsonIgnore]
     public virtual ICollection<Song> Songs { get; set; } = new List<Song>();
 }
