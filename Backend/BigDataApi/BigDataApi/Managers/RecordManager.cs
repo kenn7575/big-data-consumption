@@ -93,5 +93,35 @@ namespace BigDataApi.Managers
 
             return filteredCountryCodes;
         }
+
+
+        public async Task<List<ArtistPopularityDto>> GetArtistPopularityByDate(int artistId, DateOnly date)
+        {
+            List<ArtistPopularityDto> result = new List<ArtistPopularityDto>();
+
+            var data = await appDBContext.Records
+                .Where(x => x.SnapshotDate == date && x.Spotify.Artists.Any(a => a.ArtistId == artistId))
+                .Include(x => x.Spotify)
+                .ThenInclude(s => s.Artists)
+                .ToListAsync();
+
+            if (!data.Any())
+            {
+                return result;
+            }
+
+            var popularityData = data
+                .GroupBy(record => record.Country)
+                .Select(group => new ArtistPopularityDto
+                {
+                    Country = group.Key,
+                    Popularity = group.Sum(record => 51 - (record.DailyRank.HasValue ? record.DailyRank.Value : 51))
+                })
+                .ToList();
+
+            result.AddRange(popularityData);
+
+            return result;
+        }
     }
 }

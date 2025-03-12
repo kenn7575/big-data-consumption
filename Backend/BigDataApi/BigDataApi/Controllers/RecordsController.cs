@@ -195,5 +195,12 @@ namespace BigDataApi.Controllers
             var countryCodes = await recordsManager.GetAllCountryCodes();
             return Ok(countryCodes);
         }
+
+        [HttpGet("GetArtistPopularityByDate/{artistId}/{date}")]
+        public async Task<IActionResult> GetArtistPopularityByDate(int artistId, DateOnly date)
+        {
+            var result = await recordsManager.GetArtistPopularityByDate(artistId, date);
+            return Ok(result);
+        }
     }
 }
