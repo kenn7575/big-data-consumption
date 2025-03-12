@@ -21,5 +21,16 @@ namespace BigDataApi.Controllers
             var artists = _artistManager.GetAllArtists();
             return Ok(artists);
         }
+
+        [HttpGet("searchByInitial")]
+        public ActionResult<IEnumerable<ArtistDto>> GetArtistsByInitial(char initial)
+        {
+            var artists = _artistManager.GetArtistsByInitial(initial);
+            if (artists == null || !artists.Any())
+            {
+                return NotFound();
+            }
+            return Ok(artists);
+        }
     }
 }
