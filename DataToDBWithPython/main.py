@@ -13,7 +13,7 @@ raspPi = os.getenv('raspPi')
 
 testMode = "--test" in sys.argv or "-t" in sys.argv
 
-engine = create_engine(localhost)
+engine = create_engine(raspPi)
 
 def __main__():
   os.system('clear')
@@ -44,11 +44,11 @@ def __main__():
     artistsDF.to_sql("artists", engine, if_exists='append', index=False)
     print("Added Artists to the database: ", timer.checkpoint())
 
-    song_artistsDF.to_sql("song_artists", engine, if_exists='append', index=False)
-    print("Added Song_Artists to the database: ", timer.checkpoint())
-          
     songsDF.to_sql("songs", engine, if_exists='append', index=False)
     print("Added Songs to the database: ", timer.checkpoint())
+          
+    song_artistsDF.to_sql("song_artists", engine, if_exists='append', index=False)
+    print("Added Song_Artists to the database: ", timer.checkpoint())
 
     recordsDF.to_sql("records", engine, if_exists='append', index=False)
     print("Added Records to the database: ", timer.checkpoint())
