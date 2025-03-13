@@ -9,5 +9,6 @@ namespace BigDataApi.Interfaces
         Task<string> GetAllRecords();
         Task<string> GetRecordBasedOnCountry(string countryCode);
         Task<List<string>> GetAllCountryCodes();
+        Task<List<NodeDto>> GetTopArtistsAndSongsByCountry(string countryCode);
     }
 }
