@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BigDataApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class ArtistsController : ControllerBase
     {
