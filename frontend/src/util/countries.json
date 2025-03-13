@@ -1,0 +1,1496 @@
+[
+  {
+    "name": "Afghanistan",
+    "code": "AF",
+    "Alpha-3 code": "AFG",
+    "Numeric": 4
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "Alpha-3 code": "ALB",
+    "Numeric": 8
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "Alpha-3 code": "DZA",
+    "Numeric": 12
+  },
+  {
+    "name": "American Samoa",
+    "code": "AS",
+    "Alpha-3 code": "ASM",
+    "Numeric": 16
+  },
+  {
+    "name": "Andorra",
+    "code": "AD",
+    "Alpha-3 code": "AND",
+    "Numeric": 20
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "Alpha-3 code": "AGO",
+    "Numeric": 24
+  },
+  {
+    "name": "Anguilla",
+    "code": "AI",
+    "Alpha-3 code": "AIA",
+    "Numeric": 660
+  },
+  {
+    "name": "Antarctica",
+    "code": "AQ",
+    "Alpha-3 code": "ATA",
+    "Numeric": 10
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "Alpha-3 code": "ATG",
+    "Numeric": 28
+  },
+  {
+    "name": "Argentina",
+    "code": "AR",
+    "Alpha-3 code": "ARG",
+    "Numeric": 32
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "Alpha-3 code": "ARM",
+    "Numeric": 51
+  },
+  {
+    "name": "Aruba",
+    "code": "AW",
+    "Alpha-3 code": "ABW",
+    "Numeric": 533
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "Alpha-3 code": "AUS",
+    "Numeric": 36
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "Alpha-3 code": "AUT",
+    "Numeric": 40
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "Alpha-3 code": "AZE",
+    "Numeric": 31
+  },
+  {
+    "name": "Bahamas",
+    "code": "BS",
+    "Alpha-3 code": "BHS",
+    "Numeric": 44
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "Alpha-3 code": "BHR",
+    "Numeric": 48
+  },
+  {
+    "name": "Bangladesh",
+    "code": "BD",
+    "Alpha-3 code": "BGD",
+    "Numeric": 50
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "Alpha-3 code": "BRB",
+    "Numeric": 52
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "Alpha-3 code": "BLR",
+    "Numeric": 112
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "Alpha-3 code": "BEL",
+    "Numeric": 56
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "Alpha-3 code": "BLZ",
+    "Numeric": 84
+  },
+  {
+    "name": "Benin",
+    "code": "BJ",
+    "Alpha-3 code": "BEN",
+    "Numeric": 204
+  },
+  {
+    "name": "Bermuda",
+    "code": "BM",
+    "Alpha-3 code": "BMU",
+    "Numeric": 60
+  },
+  {
+    "name": "Bhutan",
+    "code": "BT",
+    "Alpha-3 code": "BTN",
+    "Numeric": 64
+  },
+  {
+    "name": "Bolivia (Plurinational State of)",
+    "code": "BO",
+    "Alpha-3 code": "BOL",
+    "Numeric": 68
+  },
+  {
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "code": "BQ",
+    "Alpha-3 code": "BES",
+    "Numeric": 535
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "code": "BA",
+    "Alpha-3 code": "BIH",
+    "Numeric": 70
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "Alpha-3 code": "BWA",
+    "Numeric": 72
+  },
+  {
+    "name": "Bouvet Island",
+    "code": "BV",
+    "Alpha-3 code": "BVT",
+    "Numeric": 74
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "Alpha-3 code": "BRA",
+    "Numeric": 76
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "code": "IO",
+    "Alpha-3 code": "IOT",
+    "Numeric": 86
+  },
+  {
+    "name": "Brunei Darussalam",
+    "code": "BN",
+    "Alpha-3 code": "BRN",
+    "Numeric": 96
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "Alpha-3 code": "BGR",
+    "Numeric": 100
+  },
+  {
+    "name": "Burkina Faso",
+    "code": "BF",
+    "Alpha-3 code": "BFA",
+    "Numeric": 854
+  },
+  {
+    "name": "Burundi",
+    "code": "BI",
+    "Alpha-3 code": "BDI",
+    "Numeric": 108
+  },
+  {
+    "name": "Cabo Verde",
+    "code": "CV",
+    "Alpha-3 code": "CPV",
+    "Numeric": 132
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "Alpha-3 code": "KHM",
+    "Numeric": 116
+  },
+  {
+    "name": "Cameroon",
+    "code": "CM",
+    "Alpha-3 code": "CMR",
+    "Numeric": 120
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "Alpha-3 code": "CAN",
+    "Numeric": 124
+  },
+  {
+    "name": "Cayman Islands",
+    "code": "KY",
+    "Alpha-3 code": "CYM",
+    "Numeric": 136
+  },
+  {
+    "name": "Central African Republic",
+    "code": "CF",
+    "Alpha-3 code": "CAF",
+    "Numeric": 140
+  },
+  {
+    "name": "Chad",
+    "code": "TD",
+    "Alpha-3 code": "TCD",
+    "Numeric": 148
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "Alpha-3 code": "CHL",
+    "Numeric": 152
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "Alpha-3 code": "CHN",
+    "Numeric": 156
+  },
+  {
+    "name": "Christmas Island",
+    "code": "CX",
+    "Alpha-3 code": "CXR",
+    "Numeric": 162
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "code": "CC",
+    "Alpha-3 code": "CCK",
+    "Numeric": 166
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "Alpha-3 code": "COL",
+    "Numeric": 170
+  },
+  {
+    "name": "Comoros",
+    "code": "KM",
+    "Alpha-3 code": "COM",
+    "Numeric": 174
+  },
+  {
+    "name": "Congo (the Democratic Republic of the)",
+    "code": "CD",
+    "Alpha-3 code": "COD",
+    "Numeric": 180
+  },
+  {
+    "name": "Congo",
+    "code": "CG",
+    "Alpha-3 code": "COG",
+    "Numeric": 178
+  },
+  {
+    "name": "Cook Islands",
+    "code": "CK",
+    "Alpha-3 code": "COK",
+    "Numeric": 184
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "Alpha-3 code": "CRI",
+    "Numeric": 188
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "Alpha-3 code": "HRV",
+    "Numeric": 191
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "Alpha-3 code": "CUB",
+    "Numeric": 192
+  },
+  {
+    "name": "Curaçao",
+    "code": "CW",
+    "Alpha-3 code": "CUW",
+    "Numeric": 531
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "Alpha-3 code": "CYP",
+    "Numeric": 196
+  },
+  {
+    "name": "Czechia",
+    "code": "CZ",
+    "Alpha-3 code": "CZE",
+    "Numeric": 203
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "code": "CI",
+    "Alpha-3 code": "CIV",
+    "Numeric": 384
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "Alpha-3 code": "DNK",
+    "Numeric": 208
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "Alpha-3 code": "DJI",
+    "Numeric": 262
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "Alpha-3 code": "DMA",
+    "Numeric": 212
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "Alpha-3 code": "DOM",
+    "Numeric": 214
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "Alpha-3 code": "ECU",
+    "Numeric": 218
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "Alpha-3 code": "EGY",
+    "Numeric": 818
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "Alpha-3 code": "SLV",
+    "Numeric": 222
+  },
+  {
+    "name": "Equatorial Guinea",
+    "code": "GQ",
+    "Alpha-3 code": "GNQ",
+    "Numeric": 226
+  },
+  {
+    "name": "Eritrea",
+    "code": "ER",
+    "Alpha-3 code": "ERI",
+    "Numeric": 232
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "Alpha-3 code": "EST",
+    "Numeric": 233
+  },
+  {
+    "name": "Eswatini",
+    "code": "SZ",
+    "Alpha-3 code": "SWZ",
+    "Numeric": 748
+  },
+  {
+    "name": "Ethiopia",
+    "code": "ET",
+    "Alpha-3 code": "ETH",
+    "Numeric": 231
+  },
+  {
+    "name": "Falkland Islands [Malvinas]",
+    "code": "FK",
+    "Alpha-3 code": "FLK",
+    "Numeric": 238
+  },
+  {
+    "name": "Faroe Islands",
+    "code": "FO",
+    "Alpha-3 code": "FRO",
+    "Numeric": 234
+  },
+  {
+    "name": "Fiji",
+    "code": "FJ",
+    "Alpha-3 code": "FJI",
+    "Numeric": 242
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "Alpha-3 code": "FIN",
+    "Numeric": 246
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "Alpha-3 code": "FRA",
+    "Numeric": 250
+  },
+  {
+    "name": "French Guiana",
+    "code": "GF",
+    "Alpha-3 code": "GUF",
+    "Numeric": 254
+  },
+  {
+    "name": "French Polynesia",
+    "code": "PF",
+    "Alpha-3 code": "PYF",
+    "Numeric": 258
+  },
+  {
+    "name": "French Southern Territories",
+    "code": "TF",
+    "Alpha-3 code": "ATF",
+    "Numeric": 260
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "Alpha-3 code": "GAB",
+    "Numeric": 266
+  },
+  {
+    "name": "Gambia",
+    "code": "GM",
+    "Alpha-3 code": "GMB",
+    "Numeric": 270
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "Alpha-3 code": "GEO",
+    "Numeric": 268
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "Alpha-3 code": "DEU",
+    "Numeric": 276
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "Alpha-3 code": "GHA",
+    "Numeric": 288
+  },
+  {
+    "name": "Gibraltar",
+    "code": "GI",
+    "Alpha-3 code": "GIB",
+    "Numeric": 292
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "Alpha-3 code": "GRC",
+    "Numeric": 300
+  },
+  {
+    "name": "Greenland",
+    "code": "GL",
+    "Alpha-3 code": "GRL",
+    "Numeric": 304
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "Alpha-3 code": "GRD",
+    "Numeric": 308
+  },
+  {
+    "name": "Guadeloupe",
+    "code": "GP",
+    "Alpha-3 code": "GLP",
+    "Numeric": 312
+  },
+  {
+    "name": "Guam",
+    "code": "GU",
+    "Alpha-3 code": "GUM",
+    "Numeric": 316
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "Alpha-3 code": "GTM",
+    "Numeric": 320
+  },
+  {
+    "name": "Guernsey",
+    "code": "GG",
+    "Alpha-3 code": "GGY",
+    "Numeric": 831
+  },
+  {
+    "name": "Guinea",
+    "code": "GN",
+    "Alpha-3 code": "GIN",
+    "Numeric": 324
+  },
+  {
+    "name": "Guinea-Bissau",
+    "code": "GW",
+    "Alpha-3 code": "GNB",
+    "Numeric": 624
+  },
+  {
+    "name": "Guyana",
+    "code": "GY",
+    "Alpha-3 code": "GUY",
+    "Numeric": 328
+  },
+  {
+    "name": "Haiti",
+    "code": "HT",
+    "Alpha-3 code": "HTI",
+    "Numeric": 332
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "code": "HM",
+    "Alpha-3 code": "HMD",
+    "Numeric": 334
+  },
+  {
+    "name": "Holy See",
+    "code": "VA",
+    "Alpha-3 code": "VAT",
+    "Numeric": 336
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "Alpha-3 code": "HND",
+    "Numeric": 340
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "Alpha-3 code": "HKG",
+    "Numeric": 344
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "Alpha-3 code": "HUN",
+    "Numeric": 348
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "Alpha-3 code": "ISL",
+    "Numeric": 352
+  },
+  {
+    "name": "India",
+    "code": "IN",
+    "Alpha-3 code": "IND",
+    "Numeric": 356
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "Alpha-3 code": "IDN",
+    "Numeric": 360
+  },
+  {
+    "name": "Iran (Islamic Republic of)",
+    "code": "IR",
+    "Alpha-3 code": "IRN",
+    "Numeric": 364
+  },
+  {
+    "name": "Iraq",
+    "code": "IQ",
+    "Alpha-3 code": "IRQ",
+    "Numeric": 368
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "Alpha-3 code": "IRL",
+    "Numeric": 372
+  },
+  {
+    "name": "Isle of Man",
+    "code": "IM",
+    "Alpha-3 code": "IMN",
+    "Numeric": 833
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "Alpha-3 code": "ISR",
+    "Numeric": 376
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "Alpha-3 code": "ITA",
+    "Numeric": 380
+  },
+  {
+    "name": "Jamaica",
+    "code": "JM",
+    "Alpha-3 code": "JAM",
+    "Numeric": 388
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "Alpha-3 code": "JPN",
+    "Numeric": 392
+  },
+  {
+    "name": "Jersey",
+    "code": "JE",
+    "Alpha-3 code": "JEY",
+    "Numeric": 832
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "Alpha-3 code": "JOR",
+    "Numeric": 400
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "Alpha-3 code": "KAZ",
+    "Numeric": 398
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "Alpha-3 code": "KEN",
+    "Numeric": 404
+  },
+  {
+    "name": "Kiribati",
+    "code": "KI",
+    "Alpha-3 code": "KIR",
+    "Numeric": 296
+  },
+  {
+    "name": "Korea (the Democratic People's Republic of)",
+    "code": "KP",
+    "Alpha-3 code": "PRK",
+    "Numeric": 408
+  },
+  {
+    "name": "Korea (the Republic of)",
+    "code": "KR",
+    "Alpha-3 code": "KOR",
+    "Numeric": 410
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "Alpha-3 code": "KWT",
+    "Numeric": 414
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "Alpha-3 code": "KGZ",
+    "Numeric": 417
+  },
+  {
+    "name": "Lao People's Democratic Republic",
+    "code": "LA",
+    "Alpha-3 code": "LAO",
+    "Numeric": 418
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "Alpha-3 code": "LVA",
+    "Numeric": 428
+  },
+  {
+    "name": "Lebanon",
+    "code": "LB",
+    "Alpha-3 code": "LBN",
+    "Numeric": 422
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "Alpha-3 code": "LSO",
+    "Numeric": 426
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "Alpha-3 code": "LBR",
+    "Numeric": 430
+  },
+  {
+    "name": "Libya",
+    "code": "LY",
+    "Alpha-3 code": "LBY",
+    "Numeric": 434
+  },
+  {
+    "name": "Liechtenstein",
+    "code": "LI",
+    "Alpha-3 code": "LIE",
+    "Numeric": 438
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "Alpha-3 code": "LTU",
+    "Numeric": 440
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "Alpha-3 code": "LUX",
+    "Numeric": 442
+  },
+  {
+    "name": "Macao",
+    "code": "MO",
+    "Alpha-3 code": "MAC",
+    "Numeric": 446
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "Alpha-3 code": "MDG",
+    "Numeric": 450
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "Alpha-3 code": "MWI",
+    "Numeric": 454
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "Alpha-3 code": "MYS",
+    "Numeric": 458
+  },
+  {
+    "name": "Maldives",
+    "code": "MV",
+    "Alpha-3 code": "MDV",
+    "Numeric": 462
+  },
+  {
+    "name": "Mali",
+    "code": "ML",
+    "Alpha-3 code": "MLI",
+    "Numeric": 466
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "Alpha-3 code": "MLT",
+    "Numeric": 470
+  },
+  {
+    "name": "Marshall Islands",
+    "code": "MH",
+    "Alpha-3 code": "MHL",
+    "Numeric": 584
+  },
+  {
+    "name": "Martinique",
+    "code": "MQ",
+    "Alpha-3 code": "MTQ",
+    "Numeric": 474
+  },
+  {
+    "name": "Mauritania",
+    "code": "MR",
+    "Alpha-3 code": "MRT",
+    "Numeric": 478
+  },
+  {
+    "name": "Mauritius",
+    "code": "MU",
+    "Alpha-3 code": "MUS",
+    "Numeric": 480
+  },
+  {
+    "name": "Mayotte",
+    "code": "YT",
+    "Alpha-3 code": "MYT",
+    "Numeric": 175
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "Alpha-3 code": "MEX",
+    "Numeric": 484
+  },
+  {
+    "name": "Micronesia (Federated States of)",
+    "code": "FM",
+    "Alpha-3 code": "FSM",
+    "Numeric": 583
+  },
+  {
+    "name": "Moldova (the Republic of)",
+    "code": "MD",
+    "Alpha-3 code": "MDA",
+    "Numeric": 498
+  },
+  {
+    "name": "Monaco",
+    "code": "MC",
+    "Alpha-3 code": "MCO",
+    "Numeric": 492
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "Alpha-3 code": "MNG",
+    "Numeric": 496
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "Alpha-3 code": "MNE",
+    "Numeric": 499
+  },
+  {
+    "name": "Montserrat",
+    "code": "MS",
+    "Alpha-3 code": "MSR",
+    "Numeric": 500
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "Alpha-3 code": "MAR",
+    "Numeric": 504
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "Alpha-3 code": "MOZ",
+    "Numeric": 508
+  },
+  {
+    "name": "Myanmar",
+    "code": "MM",
+    "Alpha-3 code": "MMR",
+    "Numeric": 104
+  },
+  {
+    "name": "Namibia",
+    "code": "Na",
+    "Alpha-3 code": "NAM",
+    "Numeric": 516
+  },
+  {
+    "name": "Nauru",
+    "code": "NR",
+    "Alpha-3 code": "NRU",
+    "Numeric": 520
+  },
+  {
+    "name": "Nepal",
+    "code": "NP",
+    "Alpha-3 code": "NPL",
+    "Numeric": 524
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "Alpha-3 code": "NLD",
+    "Numeric": 528
+  },
+  {
+    "name": "New Caledonia",
+    "code": "NC",
+    "Alpha-3 code": "NCL",
+    "Numeric": 540
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "Alpha-3 code": "NZL",
+    "Numeric": 554
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "Alpha-3 code": "NIC",
+    "Numeric": 558
+  },
+  {
+    "name": "Niger",
+    "code": "NE",
+    "Alpha-3 code": "NER",
+    "Numeric": 562
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "Alpha-3 code": "NGA",
+    "Numeric": 566
+  },
+  {
+    "name": "Niue",
+    "code": "NU",
+    "Alpha-3 code": "NIU",
+    "Numeric": 570
+  },
+  {
+    "name": "Norfolk Island",
+    "code": "NF",
+    "Alpha-3 code": "NFK",
+    "Numeric": 574
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "code": "MP",
+    "Alpha-3 code": "MNP",
+    "Numeric": 580
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "Alpha-3 code": "NOR",
+    "Numeric": 578
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "Alpha-3 code": "OMN",
+    "Numeric": 512
+  },
+  {
+    "name": "Pakistan",
+    "code": "PK",
+    "Alpha-3 code": "PAK",
+    "Numeric": 586
+  },
+  {
+    "name": "Palau",
+    "code": "PW",
+    "Alpha-3 code": "PLW",
+    "Numeric": 585
+  },
+  {
+    "name": "Palestine, State of",
+    "code": "PS",
+    "Alpha-3 code": "PSE",
+    "Numeric": 275
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "Alpha-3 code": "PAN",
+    "Numeric": 591
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "Alpha-3 code": "PNG",
+    "Numeric": 598
+  },
+  {
+    "name": "Paraguay",
+    "code": "PY",
+    "Alpha-3 code": "PRY",
+    "Numeric": 600
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "Alpha-3 code": "PER",
+    "Numeric": 604
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "Alpha-3 code": "PHL",
+    "Numeric": 608
+  },
+  {
+    "name": "Pitcairn",
+    "code": "PN",
+    "Alpha-3 code": "PCN",
+    "Numeric": 612
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "Alpha-3 code": "POL",
+    "Numeric": 616
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "Alpha-3 code": "PRT",
+    "Numeric": 620
+  },
+  {
+    "name": "Puerto Rico",
+    "code": "PR",
+    "Alpha-3 code": "PRI",
+    "Numeric": 630
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "Alpha-3 code": "QAT",
+    "Numeric": 634
+  },
+  {
+    "name": "Republic of North Macedonia",
+    "code": "MK",
+    "Alpha-3 code": "MKD",
+    "Numeric": 807
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "Alpha-3 code": "ROU",
+    "Numeric": 642
+  },
+  {
+    "name": "Russian Federation",
+    "code": "RU",
+    "Alpha-3 code": "RUS",
+    "Numeric": 643
+  },
+  {
+    "name": "Rwanda",
+    "code": "RW",
+    "Alpha-3 code": "RWA",
+    "Numeric": 646
+  },
+  {
+    "name": "Réunion",
+    "code": "RE",
+    "Alpha-3 code": "REU",
+    "Numeric": 638
+  },
+  {
+    "name": "Saint Barthélemy",
+    "code": "BL",
+    "Alpha-3 code": "BLM",
+    "Numeric": 652
+  },
+  {
+    "name": "Saint Helena, Ascension and Tristan da Cunha",
+    "code": "SH",
+    "Alpha-3 code": "SHN",
+    "Numeric": 654
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "Alpha-3 code": "KNA",
+    "Numeric": 659
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "LC",
+    "Alpha-3 code": "LCA",
+    "Numeric": 662
+  },
+  {
+    "name": "Saint Martin (French part)",
+    "code": "MF",
+    "Alpha-3 code": "MAF",
+    "Numeric": 663
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "code": "PM",
+    "Alpha-3 code": "SPM",
+    "Numeric": 666
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "Alpha-3 code": "VCT",
+    "Numeric": 670
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "Alpha-3 code": "WSM",
+    "Numeric": 882
+  },
+  {
+    "name": "San Marino",
+    "code": "SM",
+    "Alpha-3 code": "SMR",
+    "Numeric": 674
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "ST",
+    "Alpha-3 code": "STP",
+    "Numeric": 678
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "Alpha-3 code": "SAU",
+    "Numeric": 682
+  },
+  {
+    "name": "Senegal",
+    "code": "SN",
+    "Alpha-3 code": "SEN",
+    "Numeric": 686
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "Alpha-3 code": "SRB",
+    "Numeric": 688
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "Alpha-3 code": "SYC",
+    "Numeric": 690
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "Alpha-3 code": "SLE",
+    "Numeric": 694
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "Alpha-3 code": "SGP",
+    "Numeric": 702
+  },
+  {
+    "name": "Sint Maarten (Dutch part)",
+    "code": "SX",
+    "Alpha-3 code": "SXM",
+    "Numeric": 534
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "Alpha-3 code": "SVK",
+    "Numeric": 703
+  },
+  {
+    "name": "Slovenia",
+    "code": "SI",
+    "Alpha-3 code": "SVN",
+    "Numeric": 705
+  },
+  {
+    "name": "Solomon Islands",
+    "code": "SB",
+    "Alpha-3 code": "SLB",
+    "Numeric": 90
+  },
+  {
+    "name": "Somalia",
+    "code": "SO",
+    "Alpha-3 code": "SOM",
+    "Numeric": 706
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "Alpha-3 code": "ZAF",
+    "Numeric": 710
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "code": "GS",
+    "Alpha-3 code": "SGS",
+    "Numeric": 239
+  },
+  {
+    "name": "South Sudan",
+    "code": "SS",
+    "Alpha-3 code": "SSD",
+    "Numeric": 728
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "Alpha-3 code": "ESP",
+    "Numeric": 724
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "Alpha-3 code": "LKA",
+    "Numeric": 144
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "Alpha-3 code": "SDN",
+    "Numeric": 729
+  },
+  {
+    "name": "Suriname",
+    "code": "SR",
+    "Alpha-3 code": "SUR",
+    "Numeric": 740
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "code": "SJ",
+    "Alpha-3 code": "SJM",
+    "Numeric": 744
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "Alpha-3 code": "SWE",
+    "Numeric": 752
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "Alpha-3 code": "CHE",
+    "Numeric": 756
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "code": "SY",
+    "Alpha-3 code": "SYR",
+    "Numeric": 760
+  },
+  {
+    "name": "Taiwan (Province of China)",
+    "code": "TW",
+    "Alpha-3 code": "TWN",
+    "Numeric": 158
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "Alpha-3 code": "TJK",
+    "Numeric": 762
+  },
+  {
+    "name": "Tanzania, United Republic of",
+    "code": "TZ",
+    "Alpha-3 code": "TZA",
+    "Numeric": 834
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "Alpha-3 code": "THA",
+    "Numeric": 764
+  },
+  {
+    "name": "Timor-Leste",
+    "code": "TL",
+    "Alpha-3 code": "TLS",
+    "Numeric": 626
+  },
+  {
+    "name": "Togo",
+    "code": "TG",
+    "Alpha-3 code": "TGO",
+    "Numeric": 768
+  },
+  {
+    "name": "Tokelau",
+    "code": "TK",
+    "Alpha-3 code": "TKL",
+    "Numeric": 772
+  },
+  {
+    "name": "Tonga",
+    "code": "TO",
+    "Alpha-3 code": "TON",
+    "Numeric": 776
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "Alpha-3 code": "TTO",
+    "Numeric": 780
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "Alpha-3 code": "TUN",
+    "Numeric": 788
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "Alpha-3 code": "TUR",
+    "Numeric": 792
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "Alpha-3 code": "TKM",
+    "Numeric": 795
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "code": "TC",
+    "Alpha-3 code": "TCA",
+    "Numeric": 796
+  },
+  {
+    "name": "Tuvalu",
+    "code": "TV",
+    "Alpha-3 code": "TUV",
+    "Numeric": 798
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "Alpha-3 code": "UGA",
+    "Numeric": 800
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "Alpha-3 code": "UKR",
+    "Numeric": 804
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "Alpha-3 code": "ARE",
+    "Numeric": 784
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "Alpha-3 code": "GBR",
+    "Numeric": 826
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "code": "UM",
+    "Alpha-3 code": "UMI",
+    "Numeric": 581
+  },
+  {
+    "name": "United States of America",
+    "code": "US",
+    "Alpha-3 code": "USA",
+    "Numeric": 840
+  },
+  {
+    "name": "Uruguay",
+    "code": "UY",
+    "Alpha-3 code": "URY",
+    "Numeric": 858
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "Alpha-3 code": "UZB",
+    "Numeric": 860
+  },
+  {
+    "name": "Vanuatu",
+    "code": "VU",
+    "Alpha-3 code": "VUT",
+    "Numeric": 548
+  },
+  {
+    "name": "Venezuela (Bolivarian Republic of)",
+    "code": "VE",
+    "Alpha-3 code": "VEN",
+    "Numeric": 862
+  },
+  {
+    "name": "Viet Nam",
+    "code": "VN",
+    "Alpha-3 code": "VNM",
+    "Numeric": 704
+  },
+  {
+    "name": "Virgin Islands (British)",
+    "code": "VG",
+    "Alpha-3 code": "VGB",
+    "Numeric": 92
+  },
+  {
+    "name": "Virgin Islands (U.S.)",
+    "code": "VI",
+    "Alpha-3 code": "VIR",
+    "Numeric": 850
+  },
+  {
+    "name": "Wallis and Futuna",
+    "code": "WF",
+    "Alpha-3 code": "WLF",
+    "Numeric": 876
+  },
+  {
+    "name": "Western Sahara",
+    "code": "EH",
+    "Alpha-3 code": "ESH",
+    "Numeric": 732
+  },
+  {
+    "name": "Yemen",
+    "code": "YE",
+    "Alpha-3 code": "YEM",
+    "Numeric": 887
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "Alpha-3 code": "ZMB",
+    "Numeric": 894
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "Alpha-3 code": "ZWE",
+    "Numeric": 716
+  },
+  {
+    "name": "Åland Islands",
+    "code": "AX",
+    "Alpha-3 code": "ALA",
+    "Numeric": 248
+  }
+]
