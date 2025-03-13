@@ -1,4 +1,4 @@
-let countryCodes: Record<string, string> = {
+export const countryCodes: Record<string, string> = {
   AF: "Afghanistan",
   AX: "Åland Islands",
   AL: "Albania",
