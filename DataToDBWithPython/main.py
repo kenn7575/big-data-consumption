@@ -10,6 +10,7 @@ load_dotenv()
 localhost = os.getenv('localhost')
 columnar = os.getenv('columnar')
 raspPi = os.getenv('raspPi')
+hydra = os.getenv('hydra')
 
 testMode = "--test" in sys.argv or "-t" in sys.argv
 
