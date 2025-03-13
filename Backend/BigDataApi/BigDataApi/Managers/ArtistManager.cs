@@ -27,7 +27,7 @@ namespace BigDataApi.Managers
         public IEnumerable<ArtistDto> SearchArtistsByName(string name)
         {
             return _context.Artists
-                .Where(a => a.Name.ToLower().StartsWith(name.ToLower()))
+                .Where(a => a.Name.StartsWith(name, StringComparison.OrdinalIgnoreCase))
                 .Select(a => new ArtistDto
                 {
                     ArtistId = a.ArtistId,
