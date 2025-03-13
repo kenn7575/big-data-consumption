@@ -1,6 +1,8 @@
 using System.Globalization;
 using BigDataApi.Data;
+using BigDataApi.Dtos;
 using BigDataApi.Interfaces;
+using BigDataApi.Managers;
 using BigDataApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -201,6 +203,13 @@ namespace BigDataApi.Controllers
         {
             var result = await recordsManager.GetArtistPopularityByDate(artistId, date);
             return Ok(result);
+        }
+
+        [HttpGet("GetTopArtistsAndSongsByCountry/{countryCode}")]
+        public async Task<ActionResult<List<NodeDto>>> GetTopArtistsAndSongsByCountry(string countryCode)
+        {
+            var data = await recordsManager.GetTopArtistsAndSongsByCountry(countryCode);
+            return Ok(data);
         }
     }
 }

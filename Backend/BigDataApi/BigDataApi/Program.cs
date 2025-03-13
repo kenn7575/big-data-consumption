@@ -14,15 +14,23 @@ namespace BigDataApi
 
             // Add services to the container.
             builder.Services.AddCors(options =>
-           {
-               options.AddPolicy(name: MyAllowSpecificOrigins,
-                   builder =>
-                   {
-                       builder.WithOrigins("http://localhost:3000", "http://localhost:3001")
-                           .AllowAnyHeader()
-                           .AllowAnyMethod();
-                   });
-           });
+            {
+                options.AddPolicy(name: MyAllowSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins("http://localhost:3000", "http://localhost:3001")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod();
+                    });
+
+                options.AddPolicy("AllowAllOrigins",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyMethod()
+                               .AllowAnyHeader();
+                    });
+            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -43,17 +51,20 @@ namespace BigDataApi
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
+                app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            // app.UseHttpsRedirection();
-
-            app.UseCors(MyAllowSpecificOrigins);
-
+            app.UseHttpsRedirection();
+            app.UseRouting();
+            app.UseCors("AllowAllOrigins");
             app.UseAuthorization();
 
-            app.MapControllers();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
 
             app.Run();
         }
