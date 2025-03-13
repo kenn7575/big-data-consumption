@@ -16,18 +16,19 @@ namespace BigDataApi.Managers
             this.appDBContext = appDBContext;
         }
 
-        public async Task<string> GetSong(string? countryCode, string songId)
+        public async Task<string> GetSong(string[]? countries, string songId)
         {
-            string? countryCodeUpper = countryCode;
-
-            if (countryCodeUpper != null) countryCodeUpper = countryCodeUpper.ToUpper();
-            if (countryCodeUpper == "GLOBAL") countryCodeUpper = null;
+            for (int i = 0; i < countries?.Length; i++)
+            {
+                if (countries[i] != null) countries[i] = countries[i].ToUpper();
+                if (countries[i] == "GLOBAL") countries[i] = null;
+            }
 
             var song = await appDBContext.Songs
                 .Include(s => s.Album)
                 .Include(s => s.Artists)
                 .Include(s => s.Records
-                    .Where(r => r.Country == countryCodeUpper)
+                    .Where(r => countries == null || countries.Contains(r.Country))
                     .OrderBy(r => r.SnapshotDate)
                 )
                 .FirstOrDefaultAsync(s => s.SpotifyId == songId);
@@ -36,6 +37,49 @@ namespace BigDataApi.Managers
             var options = new JsonSerializerOptions { WriteIndented = true };
 
             return JsonSerializer.Serialize(song, options);
+        }
+
+        public async Task<string> GetSongChartData(string[]? countries, string songId)
+        {
+            for (int i = 0; i < countries?.Length; i++)
+            {
+                if (countries[i] != null) countries[i] = countries[i].ToUpper();
+                if (countries[i] == "GLOBAL") countries[i] = null;
+            }
+
+            var song = await appDBContext.Songs
+                .Include(s => s.Records
+                    .Where(r => countries == null || countries.Contains(r.Country))
+                )
+                .FirstOrDefaultAsync(s => s.SpotifyId == songId);
+
+            if (song == null) return "{}";
+
+            var grouped = song.Records
+                .Where(r => r.SnapshotDate.HasValue)
+                .GroupBy(r => r.SnapshotDate!.Value)
+                .OrderBy(g => g.Key);
+
+            var chartData = new List<Dictionary<string, object>>();
+
+            foreach (var group in grouped)
+            {
+                var row = new Dictionary<string, object>
+                {
+                    ["SnapshotDate"] = group.Key.ToString("yyyy-MM-dd")
+                };
+
+                foreach (var record in group)
+                {
+                    var countryKey = record.Country ?? "Global";
+                    row[countryKey] = record.DailyRank ?? 0;
+                }
+
+                chartData.Add(row);
+            }
+
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            return JsonSerializer.Serialize(chartData, options);
         }
 
         public async Task<string> GetPossibleCountries(string songId)
