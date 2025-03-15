@@ -16,6 +16,23 @@ namespace BigDataApi.Managers
             this.appDBContext = appDBContext;
         }
 
+        public async Task<string> GetSongs(string search = "", int limit = 100)
+        {
+            if (limit > 100) limit = 100;
+
+            // search = search.Replace("+", " ");
+
+            var songs = await appDBContext.Songs
+            .Select(s => new { s.SpotifyId, s.Name, Artists = s.Artists.Select(a => a.Name) })
+            .Where(s => s.Name.ToLower().Contains(search.ToLower()))
+            .Take(limit)
+            .ToListAsync();
+
+            var options = new JsonSerializerOptions { WriteIndented = true };
+
+            return JsonSerializer.Serialize(songs, options);
+        }
+
         public async Task<string> GetSong(string[]? countries, string songId)
         {
             for (int i = 0; i < countries?.Length; i++)

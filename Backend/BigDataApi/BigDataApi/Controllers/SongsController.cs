@@ -20,6 +20,13 @@ namespace BigDataApi.Controllers
             this.songsManager = songsManager;
         }
 
+        [HttpGet("")]
+        public async Task<IActionResult> GetSongs([FromQuery]string search = "", [FromQuery]int limit = 100)
+        {
+            var result = await songsManager.GetSongs(search, limit);
+            return Ok(result);
+        }
+
         [HttpGet("{songId}")]
         public async Task<IActionResult> GetSong([FromQuery]string[]? Countries, string songId)
         {
