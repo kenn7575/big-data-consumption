@@ -30,3 +30,9 @@ export interface SongChart {
 
   SnapshotDate: string;
 }
+
+export interface SongSearch {
+  SpotifyId: string;
+  Name: string;
+  Artists: Artist[];
+}

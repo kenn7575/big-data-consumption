@@ -23,10 +23,12 @@ import { Check, ChevronsUpDown } from "lucide-react";
 
 interface ComboboxProps {
   values: { label: string; value: string }[];
-  selected: string[];
-  setSelected: (value: string[]) => void;
+  selected?: string[];
+  setSelected?: (value: string[]) => void;
   noSelectedPlaceholder?: string;
   searchPlaceholder?: string;
+  onSearch?: (value: string) => void;
+  onSelect?: (value: string) => void;
   closeOnSelect?: boolean;
   disabled?: boolean;
   multiselect?: boolean;
@@ -38,13 +40,18 @@ export function Combobox({
   setSelected,
   noSelectedPlaceholder = "Select",
   searchPlaceholder = "Search",
+  onSearch = () => {},
+  onSelect = () => {},
   closeOnSelect = false,
   disabled = false,
-  multiselect,
+  multiselect = false,
 }: ComboboxProps) {
   const [open, setOpen] = useState(false);
 
   function handleSelect(currentValue: string) {
+    onSelect(currentValue);
+    if (!setSelected || !selected) return;
+
     if (!multiselect) {
       setSelected([currentValue]);
 
@@ -73,19 +80,22 @@ export function Combobox({
           aria-expanded={open}
           className="w-[200px] justify-between"
         >
-          {selected.length ? selected.join(", ") : noSelectedPlaceholder}
+          {selected?.length ? selected.join(", ") : noSelectedPlaceholder}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-[200px] p-0">
         <Command>
-          <CommandInput placeholder={searchPlaceholder} />
+          <CommandInput
+            placeholder={searchPlaceholder}
+            onValueChange={onSearch}
+          />
           <CommandList>
             <CommandEmpty>No values found.</CommandEmpty>
             <CommandGroup>
               {values.map((value) => (
                 <CommandItem
-                  disabled={disabled && !selected.includes(value.value)}
+                  disabled={disabled && !selected?.includes(value.value)}
                   key={value.value}
                   value={value.value}
                   onSelect={(currentValue) => {
@@ -96,7 +106,7 @@ export function Combobox({
                   <Check
                     className={cn(
                       "ml-auto",
-                      selected.includes(value.value)
+                      selected?.includes(value.value)
                         ? "opacity-100"
                         : "opacity-0",
                     )}
